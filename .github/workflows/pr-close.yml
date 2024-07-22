@@ -1,7 +1,8 @@
-name: Close Pull Request
+name: Close or Merge corresponding PR on the data repo
 
 env:
-  TARGET_REPO: nsarlin-zama/test-target-repo
+  TARGET_ORGA: nsarlin-zama
+  TARGET_REPO: ${TARGET_ORGA}/test-target-repo
   TARGET_REPO_API_URL: ${{ github.api_url }}/repos/${TARGET_REPO}
 
 # only trigger on pull request closed events
