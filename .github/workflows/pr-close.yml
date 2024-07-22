@@ -5,6 +5,10 @@ env:
   TARGET_REPO: ${TARGET_ORGA}/test-target-repo
   TARGET_REPO_API_URL: ${{ github.api_url }}/repos/${TARGET_REPO}
 
+env:
+  TARGET_REPO: nsarlin-zama/test-target-repo
+  TARGET_REPO_API_URL: ${{ github.api_url }}/repos/${TARGET_REPO}
+
 # only trigger on pull request closed events
 on:
   pull_request:
